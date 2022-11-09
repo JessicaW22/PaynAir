@@ -1,3 +1,0 @@
-myName = input('What is your name?')
-print('Hi ' + myName + '! Nice to meet you!')
-print('Welcome to the Programing Course!')
