@@ -26,16 +26,16 @@ print(customers)
 
 def deposit(customer, payment):
     if payment < 0:
-        print("You can't deposit negative money.")
+        print("\nYou can't deposit negative money.")
     else:
         customers[customer] += payment
     
 
 def withdraw(customer, withdrawal):
     if withdrawal < 0:
-        print("You can't withdraw negative money.")
+        print("\nYou can't withdraw negative money.")
     elif customers[customer]<withdrawal:
-        print("Your account balance is not high enough for the requested withdrawal")
+        print("\nYour account balance is not high enough for the requested withdrawal")
     else:
         customers[customer] -= withdrawal
 
