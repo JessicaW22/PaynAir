@@ -8,8 +8,8 @@ What makes your project stand out? Include screenshots, code snippets, logos, et
 ## Code examples
 Include very short code examples that show what the project does as concisely as possible. Developers should be able to figure out how your project solves their problem by looking at the code examples. Make sure the API you are showing off is intuitive, and that your code is short and concise. See the news-please project for example.
 ## Creating the seat indexes from the chartIn.txt file
-_______________________________________________________________________________________________________________________________________________________________________
-``` #open and read the chart.txt file
+``` 
+#open and read the chart.txt file
 file = open('chart.txt', 'r')
 f = file.readlines()
 
@@ -21,8 +21,9 @@ for line in f:
     else:
         newList.append(line)
     
-print(newList)```
-_______________________________________________________________________________________________________________________________________________________________________
+print(newList)
+```
+
 ## Installation
 Provide step-by-step examples and descriptions of how to set up a development environment.
 
