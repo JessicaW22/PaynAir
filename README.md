@@ -20,7 +20,8 @@ for line in f:
     else:
         newList.append(line)
     
-print(newList) ```
+print(newList)```
+
 ## Installation
 Provide step-by-step examples and descriptions of how to set up a development environment.
 
