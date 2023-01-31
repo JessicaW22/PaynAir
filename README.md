@@ -36,7 +36,7 @@ If you performed evaluations as part of your project, include your preliminary r
 If you are about to complete your thesis, include the most important findings (precision/recall/F1 measure) and refer to the corresponding pages in your thesis document.
 
 # Tasks each group member did
-Overall, we often met to work on the project to support each other in working on it, which is why it is hard to say who exactly did what, but in the following we try to list where our main priorities were:
+Overall, we often met to work on the project to support each other in working on it, which is why it is hard to say who exactly did what. But in the following we try to list where our main priorities were:
 
 ## Moritz Peters
 Web-based frontend created in HTML, Login/Logout function
