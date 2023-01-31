@@ -39,10 +39,20 @@ If you performed evaluations as part of your project, include your preliminary r
 If you are about to complete your thesis, include the most important findings (precision/recall/F1 measure) and refer to the corresponding pages in your thesis document.
 
 ## License
-Include the project's license. Usually, we suggest MIT or Apache. Ask your supervisor. For example:
+Power of Attorney Statement
 
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use news-please except in compliance with the License. A copy of the License is included in the project, see the file LICENSE.
+We, the signees, are working on the project ''Attack on Python'' under the supervision of Prof. Dr. Bela Gipp. The specified project involves the creation of software and documentation that shall be placed under an open source license.
 
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License
+We hereby grant Prof. Dr. Bela Gipp full authorization to perform any legal acts necessary, including making declarations on my behalf, in order to irrevocably place any software and documentation created as a result of our project under an open source license, e.g. Apache 2.0. The type of license remains at the discretion of Prof. Gipp, as long as it is an open source license. We are aware that this will permanently exclude any commercial exploitation of our copyrights.
 
-License of this readme-template (remove this once you replaced this readme-template with your own content)
+We hereby confirm that we have read and understood the Apache Licence 2.0 at: https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)#fulltext
+
+Göttingen, 31.01.2023
+
+Grapengießer, Maya
+
+Peters, Leonie
+
+Peters, Moritz
+
+Wernet, Jessica Celine
