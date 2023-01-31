@@ -27,9 +27,8 @@ for line in f:
 print(newList)
 ```
 
-## Installation
+## Installation guide
 Provide step-by-step examples and descriptions of how to set up a development environment.
-## Results 
 
 # Tasks each group member did
 Overall, we often met to work on the project to support each other in working on it, which is why it is hard to say who exactly did what. But in the following we try to list where our main priorities were:
