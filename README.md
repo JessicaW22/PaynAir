@@ -28,10 +28,6 @@ print(newList)
 ```
 
 # Guide how to use our website
-## Requirements
-• Visual Studio
-
-• Live server extension for Visual Studio
 
 ## Help Page
 1. Click on help! To get to the help page from PaynAir.
