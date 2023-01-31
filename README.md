@@ -27,9 +27,6 @@ print(newList)
 ## Installation
 Provide step-by-step examples and descriptions of how to set up a development environment.
 
-## API reference
-For small projects with a simple enough API, include the reference docs in this README. For medium-sized and larger projects, provide a link to the API reference docs.
-
 ## How to use and extend the project? (maybe)
 Include a step-by-step guide that enables others to use and extend your code for their projects. Whether this section is required and whether it should be part of the README.md or a separate file depends on your project. If the very short Code Examples from above comprehensively cover (despite being concise!) all the major functionality of your project already, this section can be omitted. If you think that users/developers will need more information than the brief code examples above to fully understand your code, this section is mandatory. If your project requires significant information on code reuse, place the information into a new .md file.
 
