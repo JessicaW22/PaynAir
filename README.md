@@ -51,7 +51,7 @@ Input Data function
 Display Seats function
 Statistics (area for admin users)
 
-## License
+# License
 Power of Attorney Statement
 
 We, the signees, are working on the project ''PaynAir'' under the supervision of Prof. Dr. Bela Gipp. The specified project involves the creation of software and documentation that shall be placed under an open source license.
