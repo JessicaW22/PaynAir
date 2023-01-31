@@ -27,12 +27,12 @@ for line in f:
 print(newList)
 ```
 
-## Guide how to use our website
-# Help Page
+# Guide how to use our website
+## Help Page
 1. Click on help! To get to the help page from PaynAir.
 2. Read the description of each step to know how to use our Website.
 
-# Login
+## Login
 Users:
 Name M.grapengießer
 Password 1234
@@ -49,12 +49,12 @@ Admin user:
 Name admin
 Password admin
 
-# Logout
+## Logout
 1. Click on Logout
 2. You are now logged out
 3. Now you can log in with another account
 
-#Notes
+## Notes
 Seat reservations:
 • You can choose between five numbers.
 • Number one => Reserve the seat 
