@@ -43,7 +43,7 @@ Password 5678
 Name J.wernet
 Password 2468
 Name M.peters
-Password
+Password Ben
 
 Admin user:
 Name admin
