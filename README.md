@@ -7,7 +7,7 @@ The project is mandatory to pass this course
 What makes your project stand out? Include screenshots, code snippets, logos, etc.
 
 ![Logo](https://github.com/JessicaW22/PaynAir/blob/main/project/screenshots/Logo.jpeg)
-![Login page](https://github.com/JessicaW22/PaynAir/blob/main/project/screenshots/Login%20p)
+![Login Page](https://github.com/JessicaW22/PaynAir/blob/main/project/screenshots/Login%20page.jpeg)
 ![Seat Reservation](https://github.com/JessicaW22/PaynAir/blob/main/project/screenshots/Seat%20reservation.jpeg)
 ![Help Center](https://github.com/JessicaW22/PaynAir/blob/main/project/screenshots/PaynAir%20Help%20Center.jpeg)
 
