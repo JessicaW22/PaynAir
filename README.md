@@ -41,7 +41,7 @@ Web-based frontend created in HTML, Login/Logout function
 Reserve/Cancel Seats, Help function, Logo design
 
 ## Jessica Wernet
-Input Data function, Display Seats function, Statistics (area for admin users)
+Input Data function, Display Seats function, Statistics (area for admin users), Management of the Github Repository
 
 # License
 Power of Attorney Statement
