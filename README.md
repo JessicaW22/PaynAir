@@ -10,7 +10,6 @@ What makes your project stand out? Include screenshots, code snippets, logos, et
 ![Help Center](https://github.com/JessicaW22/PaynAir/blob/main/project/screenshots/PaynAir%20Help%20Center.jpeg)
 
 ## Code examples
-Include very short code examples that show what the project does as concisely as possible. Developers should be able to figure out how your project solves their problem by looking at the code examples. Make sure the API you are showing off is intuitive, and that your code is short and concise. See the news-please project for example.
 ## Creating the seat indexes from the chartIn.txt file
 ``` 
 #open and read the chart.txt file
