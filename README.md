@@ -39,24 +39,23 @@ Users:
 | -------- | -------------  |
 | Password |      1234      |
 
+|   Name   |   L.peters     |
+| -------- | -------------  |
+| Password |      5678      |
 
-Name L.peters
+|   Name   |    J.wernet    |
+| -------- | -------------  |
+| Password |      2468      |
 
-Password 5678
-
-Name J.wernet
-
-Password 2468
-
-Name M.peters
-
-Password Ben
+|   Name   |    M.peters    |
+| -------- | -------------  |
+| Password |      Ben       |
 
 Admin user:
 
-Name admin
-
-Password admin
+|   Name   |      admin     |
+| -------- | -------------  |
+| Password |      admin     |
 
 ## Logout
 1. Click on Logout
