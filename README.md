@@ -28,6 +28,10 @@ print(newList)
 ```
 
 # Guide how to use our website
+## How to open our website
+1. Download all files from the website folder in the Github repository and save them in a local files folder
+
+2. Run the pa-frontend.html file in a browser of your choice
 
 ## Help Page
 1. Click on help! To get to the help page from PaynAir.
