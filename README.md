@@ -41,7 +41,7 @@ If you are about to complete your thesis, include the most important findings (p
 ## License
 Power of Attorney Statement
 
-We, the signees, are working on the project ''Attack on Python'' under the supervision of Prof. Dr. Bela Gipp. The specified project involves the creation of software and documentation that shall be placed under an open source license.
+We, the signees, are working on the project ''PaynAir'' under the supervision of Prof. Dr. Bela Gipp. The specified project involves the creation of software and documentation that shall be placed under an open source license.
 
 We hereby grant Prof. Dr. Bela Gipp full authorization to perform any legal acts necessary, including making declarations on my behalf, in order to irrevocably place any software and documentation created as a result of our project under an open source license, e.g. Apache 2.0. The type of license remains at the discretion of Prof. Gipp, as long as it is an open source license. We are aware that this will permanently exclude any commercial exploitation of our copyrights.
 
