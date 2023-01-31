@@ -27,8 +27,41 @@ for line in f:
 print(newList)
 ```
 
-## Installation guide
-Provide step-by-step examples and descriptions of how to set up a development environment.
+## Guide how to use our website
+# Help Page
+1. Click on help! To get to the help page from PaynAir.
+2. Read the description of each step to know how to use our Website.
+
+# Login
+Users:
+Name M.grapengießer
+Password 1234
+
+Name L.peters
+Password 5678
+
+Name J.wernet
+Password 2468
+Name M.peters
+Password
+
+Admin user:
+Name admin
+Password admin
+
+# Logout
+1. Click on Logout
+2. You are now logged out
+3. Now you can log in with another account
+
+#Notes
+Seat reservations:
+• You can choose between five numbers.
+• Number one => Reserve the seat 
+• Enter row => The Airline has 10 rows where you can choose from. 
+• Enter a seat => Our seats named after the lines from A to F 
+• Enter your Name and choose between the options 1= “reserve a seat”, 2= “cancel a
+reservation”, 3= “display reservation”, 4= “save reservation” and 5= “exit"
 
 # Tasks each group member did
 Overall, we often met to work on the project to support each other in working on it, which is why it is hard to say who exactly did what. But in the following we try to list where our main priorities were:
@@ -37,7 +70,7 @@ Overall, we often met to work on the project to support each other in working on
 Web-based frontend created in HTML, Login/Logout function
 
 ## Maya Grapengießer and Leonie Peters
-Reserve/Cancel Seats, Help function, Logo design
+Reserve/Cancel Seats, Help function, Logo design, Guide how to use our website
 
 ## Jessica Wernet
 Input Data function, Display Seats function, Statistics (area for admin users), Management of the Github Repository
