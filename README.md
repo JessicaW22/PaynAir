@@ -5,6 +5,10 @@ This project offers a web based seat reservation system for a plane.
 The project is mandatory to pass this course
 ## Features
 What makes your project stand out? Include screenshots, code snippets, logos, etc.
+
+Logo 
+![Logo](http://url/to/img.png)
+
 ## Code examples
 Include very short code examples that show what the project does as concisely as possible. Developers should be able to figure out how your project solves their problem by looking at the code examples. Make sure the API you are showing off is intuitive, and that your code is short and concise. See the news-please project for example.
 ## Creating the seat indexes from the chartIn.txt file
