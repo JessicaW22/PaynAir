@@ -56,10 +56,15 @@ Password admin
 
 ## Notes
 Seat reservations:
+
 • You can choose between five numbers.
+
 • Number one => Reserve the seat 
+
 • Enter row => The Airline has 10 rows where you can choose from. 
+
 • Enter a seat => Our seats named after the lines from A to F 
+
 • Enter your Name and choose between the options 1= “reserve a seat”, 2= “cancel a
 reservation”, 3= “display reservation”, 4= “save reservation” and 5= “exit"
 
