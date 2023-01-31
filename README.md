@@ -1,8 +1,6 @@
 # PaynAir
 ## Description
 This project offers a web based seat reservation system for a plane.
-## Motivation
-The project is mandatory to pass this course
 ## Features
 What makes your project stand out? Include screenshots, code snippets, logos, etc.
 
@@ -32,14 +30,7 @@ print(newList)
 
 ## Installation
 Provide step-by-step examples and descriptions of how to set up a development environment.
-
-## How to use and extend the project? (maybe)
-Include a step-by-step guide that enables others to use and extend your code for their projects. Whether this section is required and whether it should be part of the README.md or a separate file depends on your project. If the very short Code Examples from above comprehensively cover (despite being concise!) all the major functionality of your project already, this section can be omitted. If you think that users/developers will need more information than the brief code examples above to fully understand your code, this section is mandatory. If your project requires significant information on code reuse, place the information into a new .md file.
-
-## Results
-If you performed evaluations as part of your project, include your preliminary results that you also show in your final project presentation, e.g., precision, recall, F1 measure and/or figures highlighting what your project does. If applicable, briefly describe the dataset your created or used first before presenting the evaluated use cases and the results.
-
-If you are about to complete your thesis, include the most important findings (precision/recall/F1 measure) and refer to the corresponding pages in your thesis document.
+## Results 
 
 # Tasks each group member did
 Overall, we often met to work on the project to support each other in working on it, which is why it is hard to say who exactly did what. But in the following we try to list where our main priorities were:
