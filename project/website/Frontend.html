@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Frontend - PaynAir online presence</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+<script defer src="https://pyscript.net/latest/pyscript.js"></script> 
+
+<style>
+html, body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        font-family: Calibri, Arial;
+    }
+    header {
+        width: 100vw;
+        margin: 0;
+        height: 100px;
+        position: absolute;
+        top: 0px;
+        left:0px;
+        background-color: #ffd700;
+    }
+
+    div.container {
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        width: 100vw;
+        height: calc(100% - 100px);
+        overflow-y: scroll ;
+    }
+    py-script {
+        position: static;
+    }
+        nav {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 30px;
+        background-color: black;
+        overflow-y: scroll;
+    }
+    nav a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        width: 100vw;
+        height: 30px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<header class="site-header"> 
+        <h1>PaynAir - online</h1>
+</header>
+
+
+
+<div class="container">
+
+<nav>
+
+        <a href="/Users/moritzmacbook/Desktop/Paynair/Python in html/Help-center.html">NEXT -></a>
+</nav>
+
+    <h1>Select your seat</h1>
+    <a>please select a seat the seems comfortble for you: </a>
+
+    <h2>Please choose an option</h2>
+<p>1. Reserve a Seat - Enter a choice: Row (1-25): Seat# (1 - 6): Please Enter your name:</p>
+<p>2. Cancel a Reservation - Enter a choice: Row (1-25): Seat# (1 - 6): Please Enter your name:</p>
+<p>3. Display Reservations - Enter a choice: Row (1-25): Seat# (1 - 6): Please Enter your name:</p>
+<p>4. Save Reservations - Enter a choice: Row (1-25): Seat# (1 - 6): Please Enter your name:</p>
+<p>5. Exit</p>
+
+    <py-script> 
+
+for element in js.printRows:
+    print(element)
+
+def reservation():
+    plane={}
+    plane[13] = "D.B. Cooper"
+    
+    total_seats = 60
+    total_rows = 10
+    total_cols = 6
+    
+    reserved_seat_numbers = []
+    available_seat_list = []
+    
+    Userlist = [("m.peters","Moritz Peters", "User", "PaynAir"),("l.peters","Leonie Peters", "User", "PaynAir"),("m.grapengießer","Maya Grapengießer", "User", "PaynAir"),("j.wernet","Jessica Wernet", "User", "PaynAir"), ("admin", "PaynAir", "Admin", "PaynAir")]
+    
+    while True:
+
+    #Choose an option
+        print(" ")
+        print("Please choose an option: ")
+        print("1. Reserve a Seat")
+        print("2. Cancel a Reservation")
+        print("3. Display Reservations")
+        print("4. Save Reservations")
+        print("5. Advanced Statistics (Admin)")
+        print("6. Exit")
+    
+        co=int(input("Enter a choice: "))
+    
+        if co == 1:
+    
+            row = int(input ("Please enter your preferred row (1 - 10): "))
+            col = int(input("Please enter your preferred seat number (1 - 6): "))
+            
+            # Since lists start at index 0, the formula will be adjusted to accomodate
+            seat = (row - 1) * 6 + col - 1                      
+    
+            # Check if seat has been taken if not reserve
+            if seat in plane:
+                name = plane[seat]
+                print("Seat", (seat + 1), "has already been reserved by " + plane[seat])
+            else:
+                name = input("Please enter your name ")
+                plane[seat] = name
+                print("Seat", (seat + 1), "has been reserved for", name)
+            
+            
+        elif co == 2:
+            row = int(input("Row (1 - 10): "))
+            col = int(input("Seat# (1 - 6): "))
+    
+            seat = (row - 1) * 6 + col - 1
+        
+            if seat in plane:
+                del plane[seat]
+                print("The reservation for seat", (seat + 1), "has been cancelled.")
+                input("Press enter to continue...")
+            else:
+                print("Seat", (seat + 1), "is not currently reserved by anyone.")
+                input("Press enter to continue...")
+                
+                    
+        elif co == 3:
+            print("Reservations:")
+            
+            sorted_list = sorted(plane.items())
+            for i in sorted_list:
+                print((i[0] + 1), "\t", i[1])
+            
+            
+        elif co == 4:
+            with open('plane.txt', 'w') as f:
+                for line in plane:
+                    record = plane[line] + " " + str(line - 1)
+                    f.write(record)
+            f.close()
+            print("Reservations saved!")
+            input("Press enter to continue...")
+    
+    
+        elif co == 5:
+            print("Accessing advanced statistics.")
+            username = input("Enter username: ")
+            password = input("Enter password: ")
+            if username == "admin" and password == "admin":
+                print("Welcome Admin!")
+                
+                #---------------------------------------------------------------------------------------------------------------------------------------------------
+                #-----------------------  DANGER! MATHEMATICS! -----------------------------------------------------------------------------------------------------
+                #---------------------------------------------------------------------------------------------------------------------------------------------------
+                #Calculate the total number of available seats aswell as turn it into a percentage
+                available_seats = total_seats - len(plane)
+                available_seats_perc = round(((total_seats - len(plane)) / total_seats), 2)
+                
+                #Calculate the total number of reserved seats aswell as turn that in to a percentage
+                reserved_seats = len(plane) 
+                reserved_seats_perc = round((len(plane)/total_seats), 2)
+                    
+                #Get a passenger list - just the names of all passengers, sorted in ascending order by their corresponding seat numbers
+                passenger_list = list(plane.values())
+                    
+                #Get the number of reserved seat numbers in ascending order.
+                for i in plane:
+                    reserved_seat_numbers.append(i + 1)
+                reserved_seat_numbers = sorted(reserved_seat_numbers)
+                    
+                #Get the number of available seats by removing the reserved ones from a list containing all possible seats
+                total_seat_numbers = []
+                for i in range(1,61):
+                    total_seat_numbers.append(i)
+                    
+                #Remove all reserved seats from the list of all seats to obtain the available seats
+                for k in reserved_seat_numbers:
+                    total_seat_numbers.remove(k)
+                available_seat_numbers = total_seat_numbers    
+                
+                seat_name_tuples = sorted(plane.items())
+                
+                    
+                #---------------------------------------------------------------------------------------------------------------------------------------------------
+                
+                
+                while True:
+                    print(" ")
+                    admin_choice = int(input("Select what you want to obtain more information about:\n1. Number and percentage of availiable seats\n2. Number and percentage of reserved seats\n3. List of seats that are available\n4. List of seats that are reserved\n5. Number of users in the system with their information.\n6. Save statistics as textfile\n7. Log out\nEnter your choice: "))
+                    #Available seat number and percentage
+                    if admin_choice == 1:
+                        print("The number of available seats is: ", available_seats)
+                        print("The percentage of seats available is: ", available_seats_perc*100, "%")
+                    
+                    #Reserved seat number and percentage
+                    elif admin_choice == 2:
+                        print("The number of reserved seats is: ", reserved_seats)
+                        print("The percentage of seats reserved is: ", reserved_seats_perc*100, "%")
+                    
+                    #Get the numbers of the seats that are available
+                    elif admin_choice == 3:
+                        print("The number of available seats are: ", available_seat_numbers)
+                    
+                    #Get the numbers of the seats that are not available
+                    elif admin_choice == 4:    
+                        print("The numbers of all reserved seats are: ")
+                        print(reserved_seat_numbers)
+                    
+                    #Get information about the users
+                    elif admin_choice == 5:
+                        
+                        print("The userinformation is shown below. (Username, Real Name, User-Type, Creator)")
+                        for i in Userlist:
+                            print("{:<30} {:<30} {:<30} {:<30}".format(i[0], i[1], i[2], i[3]))
+                    
+                    elif admin_choice == 6:
+                        with open('statistics.txt', 'w') as g:
+                            g.write("Total number of seats available: \t")
+                            g.write(str(available_seats))
+                            
+                            g.write("\nPercentage of seats available: \t")
+                            g.write(str(available_seats_perc*100) + "%")
+                            
+                            g.write("\nTotal number of seats reserved: \t")
+                            g.write(str(reserved_seats))
+                            
+                            g.write("\nPercentage of seats reserved: \t")
+                            g.write(str(reserved_seats_perc*100) + "%")
+                            
+                            g.write("\n\nList of seats available \n")
+    
+                            g.write(str(available_seat_numbers))
+                            
+                            
+                            g.write("\n\nList of seats reserved \n")
+                            
+                            g.write(str(reserved_seat_numbers))
+                            
+                            g.write("\n\nList of corresponding passengers and seats\n")
+                            for j in seat_name_tuples:
+                                g.write("{:<30} {:<30}".format(j[0]+1, j[1]) + "\n")
+                            
+                            g.write("\n\nUserinfo\n")
+                            
+                            for i in Userlist:
+                                g.write("{:<30} {:<30} {:<30} {:<30}".format(i[0], i[1], i[2], i[3]) + "\n")
+                        g.close()
+                        
+                        
+                    elif admin_choice == 7:
+                        break
+                        print("Exiting advanced statistics. You are brought back to the user functions.")
+                    
+            
+            else:
+                print("Your usename and/or password was incorrect. Try again or accept that you are not an admin.")
+            
+            
+        elif co == 6:
+            print("You have exited the seat reservation system. Thank you for using our service!")
+            break
+
+reservation()
+
+</py-script>
+<py-terminal></py-terminal>
+
+</div>
+
+</body>
+
+<script type="text/javascript">
+  
+  var chartIn = "\
+   A B C D E F\n\
+1  A B C D E F\n\
+2  A B C D E F\n\
+3  A B C D E F\n\
+4  A B C D E F\n\
+5  A B C D E F\n\
+6  A B C D E F\n\
+7  A B C D E F\n\
+8  A B C D E F\n\
+9  A B C D E F\n\
+10 A B C D X F"
+
+var plan = [];
+var rows = chartIn.split("\n");
+for(var i = 1; i < rows.length; i = i + 1) {
+  var temp = rows[i].split(" ");
+  temp = temp.filter(v => v != "");
+  temp.shift();
+  plan.push(temp);
+}
+
+var rowLength = plan[0].length;
+var middleIndex = Math.floor(rowLength / 2);
+
+var printRows = [];
+for(var i = 0; i < rowLength; i = i + 1) {
+  printRows[i] = "";
+  for(var j = 0; j < middleIndex; j = j + 1) {
+    printRows[i] = printRows[i] + plan[i][j] + " ";
+  }
+  printRows[i] = printRows[i] + "| | ";
+  for(var j = middleIndex; j < rowLength; j = j + 1) {
+    printRows[i] = printRows[i] + plan[i][j] + " ";
+  }
+}
+</script>
+
+
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PaynAir - Official Online presence</title>
+<body>
+
+	<header class="site-header"> 
+		<h1>PaynAir - online</h1>
+
+		<form class="login" input type="submit" name="submit">
+		
+        	<table align="center">
+           	 	<tr>
+                	<td>username:</td>
+                	<td><input type="text" name="username" placeholder="enter your username"></td>
+            	</tr>
+            	<tr>
+                	<td>Password:</td>
+                	<td><input name='word' type="password" placeholder="enter your Password"></td>
+            	</tr>
+            	<tr>
+                	<td></td>
+                	<td><input type="submit" value="submit"></td>
+            	</tr>
+            </table>
+		</form>
+
+
+	</header>
+
+	<nav>
+
+		<a href="/Users/moritzmacbook/Desktop/Paynair/Python in html/Help-center.html">Help!</a>
+
+	</nav>
+
+	<div class="container">
+		<video autoplay muted>
+
+  			<source src="/Users/moritzmacbook/Desktop/Paynair/Python in html/Flying above the clouds, 1 hour, no looping or cuts, no sound.mp4" type="video/mp4">
+  			Your browser does not support the video tag.
+
+		</video >
+
+		<div class="text-block">
+			<h2>Select your journey</h2>
+				
+			<form class="selection" action="/Users/moritzmacbook/Desktop/Paynair/Python in html/Frontend.html" id="flight-sel">
+				<p>from:</p>
+				<label for="from">Choose your departure!</label>
+				<select name="from" id="from">
+					<option value="BER">Berlin</option> 
+					<option value="FRA">Frankfurt</option>
+					<option value="FCO">Rom</option>
+					<option value="ATH">Athen</option>
+				</select>
+				<br>
+
+				<p>destination:</p>
+				<label for="from">Choose your departure!</label>
+				<select name="from" id="from">
+					<option value="BER">Berlin</option> 
+					<option value="FRA">Frankfurt</option>
+					<option value="FCO">Rom</option>
+					<option value="ATH">Athen</option>
+				</select>
+				<br>
+
+				<input type="submit" value="submit" id="submit-button"></input>
+
+			</form>
+
+		</div>
+	</div>
+
+</body>
+<style>
+	html, body {
+		margin: 0;
+		padding: 0;
+		width: 100vw;
+		height: 100vh;
+		font-family: Calibri, Arial;
+	}
+	header {
+		width: 100vw;
+		margin: 0;
+		height: 100px;
+		position: absolute;
+		top: 0px;
+		left:0px;
+		background-color: #ffd700;
+
+	}
+
+	h1 {
+		position: absolute;
+		left: 0px;
+		top: 15px;
+		width: 100vw;
+		text-align: center;
+		font-size: 60px;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	header form {
+		position: absolute;
+		right: 0px;
+		top: 10px;
+		width: 320px;
+		height: 80px;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	nav {
+		position: absolute;
+		top: 100px;
+		left: 0px;
+		width: 100vw;
+		height: 30px;
+		background-color: black;
+	}
+	nav a {
+		display: block;
+		text-decoration: none;
+		color: white;
+		width: 100vw;
+		height: 30px;
+		text-align: center;
+		font-size: 20px;
+	}
+	div.container {
+		position: absolute;
+		top: 130px;
+		left: 0px;
+		width: 100vw;
+		height: calc(100vh - 130px);
+		overflow: hidden;
+	}
+
+	div.container video {
+		position: absolute;
+		width: 100vw;
+		height: auto;
+		top: 0px;
+		left: 0px;
+	}
+
+	div.text-block {
+		width: 450px;
+		height: 350px;
+		background-color: rgba(255, 255, 255, 0.6);
+		position: absolute;
+		left: calc(50vw - 225px);
+		top: calc(50% - 175px);
+		text-align: center;
+		font-size: 18px;
+
+	}
+
+	div.text-block #submit-button {
+		width: 410px;
+		border: none;
+		background-color: black;
+		color: white;
+		font-size: 40px;
+		height: 60px;
+		cursor: pointer;
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+
+	}
+
+
+
+
+
+</style>
+
+<script type="text/javascript">
+var form=document.getElementById('flight-sel')
+	function login(object){
+
+		object.preventDefault();
+		var para=new URLSearchParams(window.location.search);
+		console.log(para) 
+		var username=para.get('username')
+		var word=para.get('word')
+
+		if(username=="M.peters" && word=="Ben"){
+			form.submit()
+		}
+
+		else if(username=="M.grapengießer" && word=="1234"){
+			form.submit()
+		}
+
+		else if(username=="L.peters" && word=="5678"){
+			form.submit()
+		}
+
+		else if(username=="J.wernet" && word=="2468"){
+			form.submit()
+		}
+		else{
+			alert('password incorrect')
+		}
+		
+	}
+
+	var button=document.getElementById('submit-button')
+	button.addEventListener('click',login);
+
+	
+
+</script>
+</html>
