@@ -35,18 +35,18 @@ If you performed evaluations as part of your project, include your preliminary r
 
 If you are about to complete your thesis, include the most important findings (precision/recall/F1 measure) and refer to the corresponding pages in your thesis document.
 
-## Tasks each group member did
+# Tasks each group member did
 Overall, we often met to work on the project to support each other in working on it, which is why it is hard to say who exactly did what, but in the following we try to list where our main priorities were:
 
-Moritz Peters:
+## Moritz Peters
 Web-based frontend created in HTML
 Login/Logout function
 
-Maya Grapengießer and Leonie Peters:
+## Maya Grapengießer and Leonie Peters
 Reserve/Cancel Seats
 Help function
 
-Jessica Wernet:
+## Jessica Wernet
 Input Data function
 Display Seats function
 Statistics (area for admin users)
