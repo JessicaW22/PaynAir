@@ -4,16 +4,16 @@ This project offers a web based seat reservation system for a plane.
 ## Features
 What makes your project stand out? Include screenshots, code snippets, logos, etc.
 
-Logo:
+## Logo
 ![Logo](https://github.com/JessicaW22/PaynAir/blob/main/project/screenshots/Logo.jpeg)
 
-Login page:
+## Login page
 ![Login Page](https://github.com/JessicaW22/PaynAir/blob/main/project/screenshots/Login%20page.jpeg)
 
-Seat reservation:
+## Seat reservation
 ![Seat Reservation](https://github.com/JessicaW22/PaynAir/blob/main/project/screenshots/Seat%20reservation.jpeg)
 
-Help center:
+## Help center
 ![Help Center](https://github.com/JessicaW22/PaynAir/blob/main/project/screenshots/PaynAir%20Help%20Center.jpeg)
 
 ## Code examples
